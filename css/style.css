@@ -1,0 +1,542 @@
+@import 'reset.css';
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #9A9A9A;
+}
+
+.wrapper{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+
+header.top_header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+header.top_header .wrapper nav.left_nav ul,
+header.top_header .wrapper nav.right_nav ul{
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    color: #433840;
+}
+header.top_header .wrapper nav.left_nav ul li,
+header.top_header .wrapper nav.right_nav ul li{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+header.top_header .wrapper nav.left_nav ul li a,
+header.top_header .wrapper nav.right_nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+header.top_header .wrapper nav.left_nav ul li a:hover,
+header.top_header .wrapper nav.right_nav ul li a:hover{
+    color: #FEA3AC;
+    transition: all 300ms ease-in-out;
+}
+header.top_header .wrapper nav.left_nav ul li a.active,
+header.top_header .wrapper nav.right_nav ul li a.active{
+    color: #FEA3AC;
+}
+
+/* Page heading styles */
+.svg_style{
+    position: relative;
+}
+.page_heading{
+    height: 400px;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page_heading.about_page{
+    max-width: 100%;
+    background: transparent url('../img/about_header.jpg') center center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.svg_style::before{
+    content: '';
+    width: 100%;
+    height: 130px;
+    background: url('../img/top.svg') center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.svg_style::after{
+    content: '';
+    width: 100%;
+    height: 110px;
+    background: url('../img/bottom.svg') center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.page_heading h2{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.page_heading span{
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* About_box */
+.about_box{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.about_box .item_data:first-child{
+    padding-left: 25px;
+    padding-right: 45px;
+}
+.about_box .item_data:last-child{
+    padding-right: 25px;
+    padding-left: 45px;
+}
+.about_box .item_data article{
+    margin-bottom: 80px;
+}
+.about_box .item_data article:last-child{
+    margin-bottom: 0;
+}
+.about_box .item_data article h3{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: #433840;
+    margin-bottom: 12px;
+}
+.about_box .item_data article p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #9A9A9A;
+}
+
+/* Infographic section */
+
+.infographic{
+    background: #FEA3AC;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+.infographic .info_list{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.infographic .info_list .item_info{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.infographic .info_list .item_info:first-child{
+    margin-left: 0;
+}
+.infographic .info_list .item_info:last-child{
+    margin-right: 0;
+}
+.infographic .info_list .item_info .icon{
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.infographic .info_list .item_info .count{
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+    color: #DFEEB6;
+    display: block;
+}
+.infographic .info_list .item_info h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* Team */
+.team h2.box_title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #433840;
+    text-align: center;
+} 
+.team .subtitle{
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    color: #F7A1A8;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.team_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team_list .team_member{
+    width: calc(50% - 201.5px);
+    background: #C9E3F4;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 190px;
+    display: flex;
+    align-items: center;
+}
+.team_list .team_member .image img{
+    border-radius: 100%;
+    margin-left: -190px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.team_list .team_member .data{
+    margin-left: 17px;
+}
+.team_list .team_member .data .name{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    display: block;
+}
+.team_list .team_member .data .post{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #433840;
+    display: block;
+    margin-bottom: 14px;
+}
+.team_list .team_member .data p{
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #433840;
+}
+.team_list .team_member .data .social{
+    display: flex;
+    align-items: center;
+}
+.team_list .team_member .data .social a{
+    color: #433840;
+    margin: 10px;
+    font-size: 15px;
+}
+.team_list .team_member .data .social a:hover{
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+.team_list .team_member:nth-child(2),
+.team_list .team_member:nth-child(3){
+    background: #DFEEB6;
+}
+.team_list .team_member:nth-child(3),
+.team_list .team_member:nth-child(4){
+    margin-left: 0;
+    margin-right: 190px;
+}
+.team_list .team_member:nth-child(3) .image,
+.team_list .team_member:nth-child(4) .image{
+    order: 2;
+}
+.team_list .team_member:nth-child(3) .image img,
+.team_list .team_member:nth-child(4) .image img{
+    margin-left: 0;
+    margin-right: -190px;
+}
+.team_list .team_member:nth-child(3) .data,
+.team_list .team_member:nth-child(4) .data{
+    order: 1;
+    margin-left: 0;
+    margin-right: 17px;
+    text-align: right;
+}
+.team_list .team_member:nth-child(1) .data .social,
+.team_list .team_member:nth-child(2) .data .social{
+    display: flex;
+    justify-content: flex-start;
+}
+.team_list .team_member:nth-child(3) .data .social,
+.team_list .team_member:nth-child(4) .data .social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+.footer .contact_info{
+    width: 100%;
+    height: 440px;
+    background: linear-gradient(0deg, rgba(67, 56, 64, 0.85), rgba(67, 56, 64, 0.85));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .contact_info .schedule h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.footer .contact_info .schedule p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.footer .contact_info .schedule em{
+    color: #DFEEB6;
+}
+.footer .contact_info .location_info{
+    margin-left: 50px;
+    margin-right: 30px;
+    align-self: flex-start;
+    margin-top: 67px;
+}
+.footer .contact_info .location_info h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.footer .contact_info .location_info p.number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.footer .contact_info .location_info p.number i{
+    color: #DFEEB6;
+    font-size: 20px;
+}
+.footer .contact_info .location_info p.number a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.footer .contact_info .location_info p.mail{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.footer .contact_info .location_info p.mail i{
+    color: #DFEEB6;
+    font-size: 20px;
+}
+.footer .contact_info .location_info p.address{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.footer .contact_info .location_info p.address i{
+    color: #DFEEB6;
+    font-size: 20px;
+}
+.footer .contact_info .social_feed h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+.footer .contact_info .social_feed{
+    align-self: flex-start;
+    margin-top: 67px;
+}
+.footer .contact_info .social_feed .rect{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer .contact_info .social_feed .rect .size{
+    width: 100px;
+    height: 100px;
+    padding: 0 3px 3px;
+}
+.footer .copy{
+    height: 60px;
+    width: 100%;
+    background: #433840;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .copy p.copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 12px 0;
+    margin-left: 30px;
+} 
+.footer .copy .social_links{
+    margin-right: 30px;
+}
+.footer .copy .social_links i{
+    font-size: 15px;
+    line-height: 35px;
+    text-align: right;
+    letter-spacing: 15px;
+    color: #DFEEB6;
+}
+
+
+
+/* Media */
+
+@media (max-width: 991px){
+    header.top_header .wrapper .logo{
+        display: none;
+    }
+    header.top_header .wrapper{
+        justify-content: center;
+    }
+    .page_heading.about_page{
+        height: 200px;
+    }
+    .svg_style::before{
+        height: 40px !important;
+    }
+    .svg_style::after{
+        height: 40px !important;
+    }
+    .about_box .item_data:nth-child(2){
+        display: none;
+    }
+    .infographic .info_list{
+        height: 300px;
+        justify-content: center;
+    }
+    .infographic .info_list .item_info .icon img{
+        max-width: 50%;
+        height: auto;
+    }
+    .infographic .info_list .item_info .count{
+        line-height: 50px;
+    }
+    .infographic .info_list .item_info h4{
+        font-size: 15px;
+    }
+    .footer .contact_info .social_feed{
+        display: none;
+    }
+    .team_list .team_member{
+        width: calc(90% - 201.5px);
+    }
+    .team_list .team_member .image img{
+        margin-left: -100px;
+    }
+    .team_list .team_member:nth-child(3), .team_list .team_member:nth-child(4){
+        margin-left: 90px;
+        margin-right: 50px;
+    }
+    .team_list .team_member:nth-child(3) .image img, .team_list .team_member:nth-child(4) .image img{
+        margin-right: -100px;
+    }
+    .svg_style::before{
+        top: -3px;
+    }
+    .svg_style::after{
+        bottom: -3px
+    }
+}
+
+@media (max-width: 600px){
+    .page_heading.about_page{
+        height: 150px;
+    }
+    .page_heading h2{
+        font-size: 30px;
+    }
+    .page_heading span{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .about_box .item_data article h3{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .infographic .info_list .item_info{
+        margin-right: -26px;
+    }
+    .infographic .info_list .item_info .count{
+        line-height: 30px;
+        font-size: 35px;
+    }
+    .infographic .info_list .item_info h4{
+        font-size: 12px;
+    }
+    .team_list .team_member .image img{
+        margin-left: -160px;
+    }
+    .footer .contact_info .schedule{
+        margin-left: 30px;
+    }
+}
